@@ -605,7 +605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &619482168
 Transform:
   m_ObjectHideFlags: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_AudioClipForOnHoverEntered: {fileID: 0}
   m_PlayAudioClipOnHoverExited: 0
   m_AudioClipForOnHoverExited: {fileID: 0}
-  m_PlayHapticsOnSelectEntered: 0
+  m_PlayHapticsOnSelectEntered: 1
   m_HapticSelectEnterIntensity: 0
   m_HapticSelectEnterDuration: 0
   m_PlayHapticsOnSelectExited: 0
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   m_AnchorControlDeadzone: 0.75
   m_AnchorControlOffAxisDeadzone: 0.3
   m_ControllerNode: 5
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
@@ -1772,6 +1772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1130063461}
   - component: {fileID: 1130063460}
+  - component: {fileID: 1130063462}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -1805,6 +1806,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1130063462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130063459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d40d03f83c385e488b8f203ce5302a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RightSelect: {fileID: 676501597}
+  LeftSelect: {fileID: 619482167}
+  RightTeleport: {fileID: 955494823}
+  LeftTeleport: {fileID: 1702646972}
 --- !u!1 &1474473408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,7 +2078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1702646973
 Transform:
   m_ObjectHideFlags: 0
@@ -2382,7 +2399,7 @@ MonoBehaviour:
   m_AnchorControlDeadzone: 0.75
   m_AnchorControlOffAxisDeadzone: 0.3
   m_ControllerNode: 4
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
@@ -2404,7 +2421,6 @@ GameObject:
   - component: {fileID: 1769266186}
   - component: {fileID: 1769266185}
   - component: {fileID: 1769266184}
-  - component: {fileID: 1769266187}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -2466,7 +2482,7 @@ MonoBehaviour:
   m_Controllers:
   - {fileID: 619482172}
   - {fileID: 676501602}
-  m_DeadZone: 0.75
+  m_DeadZone: 0.9
 --- !u!114 &1769266185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2494,19 +2510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XRRig: {fileID: 1769266182}
---- !u!114 &1769266187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769266181}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df2be8ed2ba91914cbdcc49e21f4df81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllersList: []
 --- !u!1 &1953694609
 GameObject:
   m_ObjectHideFlags: 0
