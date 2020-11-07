@@ -91,8 +91,7 @@ public class DoorHelper : MonoBehaviour
 
             if (!playedOpenSound)
             {
-                //playaudio(DoorOpenSound, transform.position, 1f, 1f);
-                audio.
+                VRUtility.Instance.PlaySpatialClipAt(DoorOpenSound, transform.position, 1f, 1f);
                 playedOpenSound = true;
             }
         }
@@ -117,7 +116,7 @@ public class DoorHelper : MonoBehaviour
         // Play Close Sound
         if (readyToPlayCloseSound && angle < 2)
         {
-            VRUtils.Instance.PlaySpatialClipAt(DoorCloseSound, transform.position, 1f, 1f);
+            VRUtility.Instance.PlaySpatialClipAt(DoorCloseSound, transform.position, 1f, 1f);
             readyToPlayCloseSound = false;
         }
 
@@ -136,7 +135,8 @@ public class DoorHelper : MonoBehaviour
             lockPos = initialLockPosition - (ratio * moveLockAmount) + moveLockAmount;
             lockPos = Mathf.Clamp(lockPos, initialLockPosition - moveLockAmount, initialLockPosition);
 
-            DoorLockTransform.transform.localPosition = new Vector3(lockPos, DoorLockTransform.transform.localPosition.y, DoorLockTransform.transform.localPosition.z);
+            DoorLockTransform.transform.localPosition = new Vector3(lockPos,
+                DoorLockTransform.transform.localPosition.y, DoorLockTransform.transform.localPosition.z);
         }
 
         // Set Lock Status
@@ -148,3 +148,4 @@ public class DoorHelper : MonoBehaviour
         // Lock Door in place if closed and requires handle to be turned
         rigid.isKinematic = angle < 0.02f && doorLocked;
     }
+}
