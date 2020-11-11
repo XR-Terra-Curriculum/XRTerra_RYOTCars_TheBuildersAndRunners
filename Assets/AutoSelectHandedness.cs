@@ -32,7 +32,7 @@ public class AutoSelectHandedness : MonoBehaviour
         {
             if (vector2.magnitude >= 0.2f)
             {
-                print("Magnitude cutoff surpassed");
+                //print("Magnitude cutoff surpassed");
                 selector.SetActive(false);
                 teleporter.SetActive(true);
             }
