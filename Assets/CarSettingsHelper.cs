@@ -14,13 +14,15 @@ public class CarSettingsHelper : MonoBehaviour
 
     public void SwitchCarLights()
     {
-        if (CarLights.activeSelf == true)
+/*        if (CarLights.activeSelf == true)
         {
             CarLights.SetActive(false);
         }
         else
         {
             CarLights.SetActive(true);
-        }
+        }*/
+
+        CarLights.SetActive(!CarLights.activeSelf);
     }
 }
