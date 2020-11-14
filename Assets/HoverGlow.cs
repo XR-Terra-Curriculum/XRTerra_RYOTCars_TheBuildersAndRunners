@@ -41,7 +41,7 @@ public class HoverGlow : MonoBehaviour
         float tau = Mathf.PI * 2;
         float rawSinWave = Mathf.Sin(cycle * tau);
         scale = rawSinWave / 2f + 0.5f;
-        print(scale);
+        //print(scale);
     }
 
 
