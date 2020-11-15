@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -25,7 +26,7 @@ public class AutoSelectHandedness : MonoBehaviour
         SwitchType(LeftSelect, LeftTeleport);
     }
 
-    void SwitchType(GameObject selector, GameObject teleporter)
+    public void SwitchType(GameObject selector, GameObject teleporter)
     {
         XRController controller = selector.GetComponent<XRController>();
         if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 vector2))
@@ -42,5 +43,9 @@ public class AutoSelectHandedness : MonoBehaviour
                 teleporter.SetActive(false);
             }
         }
+    }
+    public void Test()
+    {
+        print("This is a test, yay!");
     }
 }
