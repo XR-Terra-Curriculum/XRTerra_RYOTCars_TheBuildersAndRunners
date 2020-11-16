@@ -2436,8 +2436,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544287507}
-  m_LocalRotation: {x: 0, y: 0.9719611, z: -0, w: -0.23514198}
-  m_LocalPosition: {x: 6.14, y: 0.30617332, z: -1.8}
+  m_LocalRotation: {x: 0.04549576, y: 0.9535947, z: 0.18805708, w: -0.23069867}
+  m_LocalPosition: {x: 6.02, y: 0.09, z: -2.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1355105075}
@@ -2448,7 +2448,7 @@ Transform:
   - {fileID: 914647667}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 207.2, z: 0}
+  m_LocalEulerAnglesHint: {x: -22.312, y: 207.2, z: 0}
 --- !u!1 &579850873
 GameObject:
   m_ObjectHideFlags: 0
@@ -5154,7 +5154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18823531, g: 0.20000002, b: 0.21960786, a: 1}
+  m_Color: {r: 0.058561746, g: 0.06143712, b: 0.066037714, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5825,7 +5825,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1280408018}
-        m_MethodName: ShowCarColorChoices
+        m_MethodName: ShowCarWheelChoices
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
