@@ -10257,12 +10257,12 @@ GameObject:
   - component: {fileID: 3541935040568659310}
   - component: {fileID: 8971878639519406009}
   m_Layer: 0
-  m_Name: TextBlock (3)
+  m_Name: TextBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &831616581153562663
 Canvas:
   m_ObjectHideFlags: 0
@@ -10393,7 +10393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830028510521679766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.69, y: 0.84, z: 0}
+  m_LocalPosition: {x: -1.136, y: 1.571, z: 0.471}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4310607989310240349}
@@ -12730,16 +12730,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Snap Points can be attached to just about anything. Make holsters, wall
-    mounts, or entire inventory systems.
-
-
-    You can  automatically scale objects
-    inside of a Snap Point. For example, when an object is snapped to this block,
-    they are scaled to 50%.
-
-
-    You can even put backpacks inside of backpacks!'
+  m_Text: "This is an exmaple of text and font for this UI panel. \nAnd this panel
+    can be used for displaying instructions for the user.\nThis is an example.\n\n---
+    Liz NT :-)"
 --- !u!4 &4903504326999448199
 Transform:
   m_ObjectHideFlags: 0
@@ -13049,7 +13042,6 @@ GameObject:
   - component: {fileID: 3005262471621400938}
   - component: {fileID: 8050480335549096571}
   - component: {fileID: 8693116981617444032}
-  - component: {fileID: 6901878379824778248}
   - component: {fileID: 658326919194927641}
   - component: {fileID: 57606912481956498}
   - component: {fileID: 6081465523204346994}
@@ -13061,7 +13053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5468933060462485053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14238,18 +14230,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.04
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6901878379824778248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5439845591021799627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cdea428d48e2bb488d33d5f75c39bb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &6903063550624471114
 CanvasRenderer:
   m_ObjectHideFlags: 0

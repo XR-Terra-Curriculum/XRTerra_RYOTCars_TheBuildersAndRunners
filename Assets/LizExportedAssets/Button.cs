@@ -67,14 +67,14 @@ public class Button : MonoBehaviour
         bool grabberInButton = false;
 
         // Find a valid grabber to push down
-        /*for (int x = 0; x < grabbers.Count; x++)
+        for (int x = 0; x < grabbers.Count; x++)
         {
-            if (!grabbers[x].HoldingItem)
+            // if (!grabbers[x].HoldingItem)
             {
                 grabberInButton = true;
                 break;
             }
-        */
+        }
 
         // push button down
         if (grabberInButton)
