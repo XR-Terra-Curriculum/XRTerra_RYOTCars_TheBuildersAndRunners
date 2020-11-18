@@ -10,54 +10,32 @@ public class CarSettingsHelper : MonoBehaviour
     public GameObject CarLights;
     public Renderer[] carExteriorRenderers;
     public Renderer[] carInteriorRenderers;
+    public Renderer[] carWheelRenderers;
     public GameObject CarColorChoicesPanel;
+    public GameObject CarWheelChoicesPanel;
 
- 
+
+
 
     void Start()
     {
         CarLights.SetActive(false);
         CarColorChoicesPanel.SetActive(false);
-
+        CarWheelChoicesPanel.SetActive(false);
     }
 
     public void SwitchCarLights()
     {
-/*        if (CarLights.activeSelf == true)
-        {
-            CarLights.SetActive(false);
-        }
-        else
-        {
-            CarLights.SetActive(true);
-        }*/
 
         CarLights.SetActive(!CarLights.activeSelf);
     }
 
     public void ChangeCarExterior(Material ExteriorMat)
     {
-        //Console.WriteLine("ChangeCarExterior triggered");
-        print("ChangeCarExterior triggered");
         foreach (MeshRenderer renderer in carExteriorRenderers)
         {
             renderer.material = ExteriorMat;
-            print("renderer.materials[0] = ExteriorMat;");
         }
-
-        /*
-          Renderer[] children;
-          children = GetComponentsInChildren<Renderer>();
-          foreach (Renderer rend in children)
-          {
-              var mats = new Material[rend.materials.Length];
-              for (var j = 0; j < rend.materials.Length; j++)
-              {
-                  mats[j] = newMat;
-              }
-              rend.materials = mats;
-          }
-              */
     }
 
     public void ChangeCarInterior(Material InteriorMat)
@@ -68,10 +46,23 @@ public class CarSettingsHelper : MonoBehaviour
         }
     }
 
+    public void ChangeCarWheel(Material WheelMat)
+    {
+        foreach (MeshRenderer renderer in carWheelRenderers)
+        {
+            renderer.material = WheelMat;
+        }
+    }
+
 
     public void ShowCarColorChoices(bool show)
     {
         CarColorChoicesPanel.SetActive(show);
+    }
+
+    public void ShowCarWheelChoices(bool show)
+    {
+        CarWheelChoicesPanel.SetActive(show);
     }
 
 
